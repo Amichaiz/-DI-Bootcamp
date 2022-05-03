@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
     res.json(user);
 })
 
-app.use('/home',express.static(__dirname+'/public'));
+app.use('/home',express.static(__dirname+'/public'));//יותר נכון שהשורה הזאת תהיה בשורה 10 app.use שים את כולם ביחד ורק אחר כך תעשה בקשות ספציפיות
